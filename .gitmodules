@@ -188,3 +188,6 @@
 [submodule "janus/vim/tools/repeat"]
 	path = janus/vim/tools/repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "janus/vim/tools/pyflakes-vim"]
+	path = janus/vim/tools/pyflakes-vim
+	url = git://github.com/kevinw/pyflakes-vim.git
