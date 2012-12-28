@@ -28,10 +28,6 @@ colorscheme solarized
 map <c-w><c-t> :WMToggle<cr>
 let g:fencview_autodetect = 1   "打开文件时自动识别编码
 let g:fencview_checklines = 10 "检查前后10行来判断编码
-nnoremap tt :NERDTreeToggle<CR>
-nnoremap be :BufExplorer<CR>
-nnoremap bs :BufExplorerHorizontalSplit<CR>
-nnoremap bv :BufExplorerVerticalSplit<CR>
 set encoding=utf-8    " Set default encoding to UTF-8
 set fileencodings=ucs-bom,utf-8,gbk,big5,latin1
 set langmenu=zh_CN.utf-8
@@ -48,7 +44,7 @@ nnoremap th :tabprev<CR>
 nnoremap tn :tabnew<CR>  
 nnoremap tc :tabclose<CR>  
 
-nnoremap Tl :Tlist<CR>  
+nnoremap tt :NERDTreeToggle<CR>
 
 autocmd FileType python set et sw=4 ts=4
 autocmd FileType html set et sw=2 ts=2
