@@ -36,7 +36,6 @@ if has('win32')
 else
   set gfn=Deja\ Vu\ Sans\ Mono\ 10
 endif
-let NERDTreeIgnore = ['\.pyc$']
 
 " tab navigation  
 nnoremap tl :tabnext<CR>  
@@ -45,6 +44,7 @@ nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>  
 
 nnoremap tt :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 autocmd FileType python set et sw=4 ts=4
 autocmd FileType html set et sw=2 ts=2
