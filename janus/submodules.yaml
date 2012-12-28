@@ -120,3 +120,4 @@ submodules:
     vimwiki:
     zoomwin:
     vroom:
+    pyflakes-vim:
