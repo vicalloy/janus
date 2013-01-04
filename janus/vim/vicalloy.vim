@@ -43,7 +43,7 @@ nnoremap th :tabprev<CR>
 nnoremap tn :tabnew<CR>  
 nnoremap tc :tabclose<CR>  
 
-nnoremap tt :NERDTreeToggle<CR>
+nnoremap tt :NERDTree<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 autocmd FileType python set et sw=4 ts=4
