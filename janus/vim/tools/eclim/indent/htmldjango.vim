@@ -31,6 +31,22 @@ runtime! indent/html.vim
 
 let g:HtmlDjangoIndentOpenElements = ''
 let g:HtmlDjangoIndentMidElements = ''
+
+if !exists('g:HtmlDjangoUserBodyElements')
+  let g:HtmlDjangoUserBodyElements = []
+endif
+let g:HtmlDjangoBodyElements = [
+    \ ['block', 'endblock'],
+    \ ['comment', 'endcomment'],
+    \ ['filter', 'endfilter'],
+    \ ['for', 'endfor'],
+    \ ['if', 'else', 'endif'],
+    \ ['ifchanged', 'else', 'endifchanged'],
+    \ ['ifequal', 'else', 'endifequal'],
+    \ ['ifnotequal', 'else', 'endifnotequal'],
+    \ ['spaceless', 'else', 'endspaceless']
+  \ ] + g:HtmlDjangoUserBodyElements
+
 for element in g:HtmlDjangoBodyElements
   if len(g:HtmlDjangoIndentOpenElements) > 0
     let g:HtmlDjangoIndentOpenElements .= '\|'
