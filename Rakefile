@@ -7,7 +7,7 @@ include Janus
 
 desc "link ViM configuration files."
 task :link_vim_conf_files do
-  %w[ vimrc gvimrc ].each do |file|
+  %w[ vimrc gvimrc vimrc.before ].each do |file|
     dest = expand("~/.#{file}")
     unless File.exist?(dest)
       ln_s(expand("../janus/vim/#{file}", __FILE__), dest)
