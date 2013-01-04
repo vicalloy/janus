@@ -190,7 +190,7 @@
 	url = git://github.com/kevinw/pyflakes-vim.git
 [submodule "janus/vim/tools/zencoding-vim"]
 	path = janus/vim/tools/zencoding-vim
-	url = https://github.com/mattn/zencoding-vim.git
+	url = git://github.com/mattn/zencoding-vim.git
 [submodule "janus/vim/tools/jedi-vim"]
 	path = janus/vim/tools/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
