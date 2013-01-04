@@ -119,6 +119,7 @@ submodules:
     vim-addon-mw-utils:
     vimwiki:
     zoomwin:
-    vroom:
     pyflakes-vim:
     zencoding-vim:
+    jedi-vim:
+    vroom:
