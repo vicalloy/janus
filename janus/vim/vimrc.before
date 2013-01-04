@@ -1,1 +1,2 @@
 call janus#disable_plugin('supertab')
+call janus#disable_plugin('pyflakes-vim')
