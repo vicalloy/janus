@@ -188,12 +188,12 @@
 [submodule "janus/vim/tools/pyflakes-vim"]
 	path = janus/vim/tools/pyflakes-vim
 	url = git://github.com/kevinw/pyflakes-vim.git
-[submodule "janus/vim/tools/zencoding-vim"]
-	path = janus/vim/tools/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule "janus/vim/tools/jedi-vim"]
 	path = janus/vim/tools/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
+[submodule "janus/vim/tools/zencoding-vim"]
+	path = janus/vim/tools/zencoding-vim
+	url = git://github.com/mattn/zencoding-vim.git
 [submodule "janus/vim/tools/vroom"]
 	path = janus/vim/tools/vroom
 	url = https://github.com/skalnik/vim-vroom.git
