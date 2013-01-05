@@ -1,3 +1,5 @@
+"let mapleader = ","
 call janus#disable_plugin('supertab')
 call janus#disable_plugin('pyflakes-vim')
-"let mapleader = ","
+set langmenu=zh_CN.utf-8
+language messages zh_CN.utf-8
