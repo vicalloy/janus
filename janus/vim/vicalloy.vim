@@ -10,25 +10,16 @@ au BufRead,BufNewFile *.py set filetype=python
 
 set cursorline
 hi CursorLine cterm=bold ctermbg=DarkBlue
+set background=dark
+colorscheme solarized
+"colorscheme blackboard desert
 set nobackup
-let Tlist_Ctags_Cmd = 'ctags'
 set autochdir
 set tags=./tags
 set tags+=tags;/
-let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只显示当前文件的
-let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
-let Tlist_Use_Right_Window = 1         "在右侧窗口中显示taglist窗口
 set nowrap
 set guioptions+=b
-set ts=4
-set sw=4
-set background=dark
 set fileformats=unix ",dos
-colorscheme solarized
-"colorscheme blackboard desert
-map <c-w><c-t> :WMToggle<cr>
-let g:fencview_autodetect = 1   "打开文件时自动识别编码
-let g:fencview_checklines = 10 "检查前后10行来判断编码
 set encoding=utf-8    " Set default encoding to UTF-8
 set fileencodings=ucs-bom,utf-8,gbk,big5,latin1
 set langmenu=zh_CN.utf-8
@@ -45,14 +36,11 @@ nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>  
 
 nnoremap tt :NERDTree<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q! | endif
+let g:fencview_autodetect = 1   "打开文件时自动识别编码
+let g:fencview_checklines = 10 "检查前后10行来判断编码
 
 autocmd FileType python set et sw=4 ts=4
-autocmd FileType html set et sw=2 ts=2
-autocmd FileType htmldjango set et sw=2 ts=2
-autocmd FileType htmljinja set et sw=2 ts=2
-autocmd FileType html set et sw=2
-autocmd FileType javascript set et sw=2
 
 set diffexpr=MyDiff()
 function MyDiff()
