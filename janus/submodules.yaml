@@ -123,3 +123,4 @@ submodules:
     zencoding-vim:
     jedi-vim:
     vroom:
+    vim-powerline:

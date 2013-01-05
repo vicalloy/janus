@@ -197,3 +197,6 @@
 [submodule "janus/vim/tools/vroom"]
 	path = janus/vim/tools/vroom
 	url = https://github.com/skalnik/vim-vroom.git
+[submodule "janus/vim/tools/vim-powerline"]
+	path = janus/vim/tools/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
