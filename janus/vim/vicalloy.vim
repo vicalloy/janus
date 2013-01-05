@@ -6,6 +6,7 @@ set nonumber "不显示行号
 set noexpandtab "不显示tab
 set nolist "不显示末尾空格
 set noignorecase  "搜索时大小写敏感
+au BufRead,BufNewFile *.py set filetype=python
 
 set cursorline
 hi CursorLine cterm=bold ctermbg=DarkBlue
