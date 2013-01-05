@@ -22,7 +22,6 @@ set guioptions+=b
 set fileformats=unix ",dos
 set encoding=utf-8    " Set default encoding to UTF-8
 set fileencodings=ucs-bom,utf-8,gbk,big5,latin1
-set langmenu=zh_CN.utf-8
 if has('win32')
   set gfn=DejaVu_Sans_Mono:h10
 else
