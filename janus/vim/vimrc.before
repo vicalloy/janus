@@ -1,5 +1,6 @@
 "let mapleader = ","
-call janus#disable_plugin('supertab')
-call janus#disable_plugin('pyflakes-vim')
+set encoding=utf-8    " Set default encoding to UTF-8
 set langmenu=zh_CN.utf-8
 language messages zh_CN.utf-8
+call janus#disable_plugin('supertab')
+call janus#disable_plugin('pyflakes-vim')
