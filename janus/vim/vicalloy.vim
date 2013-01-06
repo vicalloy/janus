@@ -33,6 +33,7 @@ nnoremap tl :tabnext<CR>
 nnoremap th :tabprev<CR>  
 nnoremap tn :tabnew<CR>  
 nnoremap tc :tabclose<CR>  
+nnoremap <leader>ct :CtrlP<CR>  
 
 nnoremap tt :NERDTree<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q! | endif
