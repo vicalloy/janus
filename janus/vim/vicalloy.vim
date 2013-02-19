@@ -28,7 +28,7 @@ else
   set gfn=Deja\ Vu\ Sans\ Mono\ 10
 endif
 
-let g:syntastic_python_checker_args = "--ignore E501"
+let g:syntastic_python_checker_args = "--ignore E501,E128"
 
 " tab navigation  
 nnoremap tl :tabnext<CR>  
