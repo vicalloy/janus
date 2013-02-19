@@ -42,7 +42,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let g:fencview_autodetect = 1   "打开文件时自动识别编码
 let g:fencview_checklines = 10 "检查前后10行来判断编码
 
-autocmd FileType python setlocal et sw=4 ts=4
+au FileType python setlocal et sw=4 ts=4
+au FileType html setlocal et sw=2 ts=2
+au FileType javascript setlocal et sw=2 ts=2
 
 set diffexpr=MyDiff()
 function MyDiff()
