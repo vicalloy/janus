@@ -4,10 +4,10 @@
 
 " Some file types should wrap their text
 function! s:setupWrapping()
-  set wrap
-  set linebreak
+  setlocal wrap
+  setlocal linebreak
   "set textwidth=72
-  set nolist
+  setlocal nolist
 endfunction
 
 ""
