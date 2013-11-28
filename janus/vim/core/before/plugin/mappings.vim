@@ -7,7 +7,7 @@ nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
 imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
 
 " format the entire file
-nmap <leader>fef ggVG=
+nnoremap <leader>fef :normal! gg=G``<CR>
 
 " upper/lower word
 nmap <leader>u mQviwU`Q
@@ -160,3 +160,6 @@ endif
 
 " After whitespace, insert the current directory into a command-line path
 cnoremap <expr> <C-P> getcmdline()[getcmdpos()-2] ==# ' ' ? expand('%:p:h') : "\<C-P>"
+
+" Kills Trailing Whitespaces
+command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>

@@ -23,6 +23,7 @@ submodules:
   # Colors
   #
   colors:
+    base16-vim:
     getafe:
     github:
     irblack:
@@ -30,6 +31,7 @@ submodules:
     pyte:
     sampler-pack:
     solarized:
+    vim-tomorrow-theme:
     vividchalk:
     janus-colors:
       dependencies:
@@ -54,6 +56,8 @@ submodules:
         - rails
         - syntax
         - behavior driven development
+    elixir:
+    erlang:
     git:
       categories:
         - git
@@ -76,8 +80,10 @@ submodules:
     ruby:
     scala:
     scss:
+    slim:
     textile:
     clojure:
+    golang:
 
 
   # Tools
@@ -87,6 +93,7 @@ submodules:
     buffergator:
     css-color:
     ctrlp:
+    dispatch:
     easymotion:
     endwise:
     fugitive:
@@ -107,7 +114,7 @@ submodules:
       dependencies:
         - vim-addon-mw-utils
         - tlib
-    snipmate-snippets:
+    vim-snippets:
       dependencies:
         - snipmate
     supertab:
@@ -125,3 +132,5 @@ submodules:
     vroom:
     vim-powerline:
     delimitMate:
+    multiple-cursors:
+    visualstar:

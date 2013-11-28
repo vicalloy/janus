@@ -11,9 +11,6 @@ and `~/.vimrc.after` Vim RC files.
 
 ## Updating to the latest version
 
-(Note: If you haven't upgraded since Jan 10, 2012, see instructions
-[below](https://github.com/carlhuda/janus#alternative-upgrade-steps).)
-
 To update to the latest version of the distribution, just run `rake`
 inside your `~/.vim` directory.
 
@@ -292,6 +289,19 @@ Tagbar is a vim plugin for browsing the tags of source code files.
 
 **Customizations**: Janus binds `<Leader>rt` to toggle Tagbar.
 
+## [SnipMate](https://github.com/garbas/vim-snipmate)
+SnipMate defines text snippets (a series of characters) that expand to
+a useful piece of code when tab is pressed.  For example, in a Ruby
+file, def`<TAB>` expands to:
+```ruby
+def method_name
+
+end
+```
+After typing in the method name, press tab again to put the cursor right
+where you want it on the next line.  [This repository](https://github.com/honza/vim-snippets/tree/master/snippets)
+has a full list of the Snippets that are available in Janus.
+
 ## [EasyMotion](https://github.com/Lokaltog/vim-easymotion)
 
 EasyMotion provides a much simpler way to use some motions in vim. It
@@ -398,37 +408,6 @@ Janus ships with a few additional syntaxes:
   `$ echo "export EDITOR='vim -f'" >> ~/.bashrc`, you can also use Git
   global config to set this if you have EDITOR set to something else
   `$ git config --global core.editor 'vim -f'`
-
-## Rakefile
-
-If you're looking for the old janus distribution controlled by a
-Rakefile then please head over to the [rakefile
-branch](https://github.com/carlhuda/janus/tree/rakefile) but please note
-that the rakefile branch will not be maintained.
-
-# Alternative Upgrade Steps
-
-## Upgrading from before January 1st, 2012
-
-If you were using Janus before January 2012, note that Janus has gone
-through a rewrite to make it more stable and customizable. Most notably,
-you can now disable plugins using `janus#disable_plugin` and customize
-Janus using `~/.vimrc.before` and `~/.vimrc.after`. See the rest of this
-`README` and the [Customization wiki page](https://github.com/carlhuda/janus/wiki/Customization).
-
-## Upgrading from January 1st, 2012 through January 10th
-
-Please run `rake` twice before running macvim; make sure `command-t` is
-gone.
-
-To upgrade to the latest version:
-
-1. remove `~/.vim`, `~/.vimrc` and `~/.gvimrc`.
-2. move customizations from `~/.vimrc.local` to `~/.vimrc.before` and
-   `~/.vimrc.after`.
-3. Do the same with `/.gvimrc.local`.
-4. Run the installer: `curl -Lo- https://bit.ly/janus-bootstrap | bash`
-
 
 # License
 
