@@ -1,4 +1,4 @@
-t# Core
+# Core
 [submodule "janus/vim/core/pathogen"]
 	path = janus/vim/core/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
