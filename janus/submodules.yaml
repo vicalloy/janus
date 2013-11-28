@@ -127,7 +127,7 @@ submodules:
     vimwiki:
     zoomwin:
     pyflakes-vim:
-    zencoding-vim:
+    emmet-vim:
     jedi-vim:
     vroom:
     vim-powerline:
