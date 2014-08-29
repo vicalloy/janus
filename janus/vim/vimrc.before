@@ -6,3 +6,4 @@ call janus#disable_plugin('supertab')
 call janus#disable_plugin('pyflakes-vim')
 call janus#disable_plugin('delimitMate')
 let g:syntastic_python_flake8_args='--ignore=E501'
+au FileType python setlocal formatprg=autopep8\ -
