@@ -51,15 +51,15 @@
 [submodule "janus/vim/langs/markdown"]
 	path = janus/vim/langs/markdown
 	url = https://github.com/tpope/vim-markdown.git
+[submodule "janus/vim/langs/mustache_handlebars"]
+	path = janus/vim/langs/mustache_handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars.git
 [submodule "janus/vim/langs/puppet"]
 	path = janus/vim/langs/puppet
 	url = https://github.com/ajf/puppet-vim.git
 [submodule "janus/vim/langs/scala"]
 	path = janus/vim/langs/scala
 	url = https://github.com/rosstimson/scala-vim-support.git
-[submodule "janus/vim/langs/handlebars"]
-	path = janus/vim/langs/handlebars
-	url = https://github.com/nono/vim-handlebars.git
 [submodule "janus/vim/langs/coffeescript"]
 	path = janus/vim/langs/coffeescript
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -75,9 +75,6 @@
 [submodule "janus/vim/langs/rspec"]
 	path = janus/vim/langs/rspec
 	url = https://github.com/skwp/vim-rspec.git
-[submodule "janus/vim/langs/scss"]
-	path = janus/vim/langs/scss
-	url = https://github.com/cakebaker/scss-syntax.vim.git
 [submodule "janus/vim/langs/csv"]
 	path = janus/vim/langs/csv
 	url = https://github.com/chrisbra/csv.vim.git
@@ -114,6 +111,12 @@
 [submodule "janus/vim/langs/golang"]
 	path = janus/vim/langs/golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "janus/vim/langs/liquid"]
+	path = janus/vim/langs/liquid
+	url = https://github.com/tpope/vim-liquid.git
+[submodule "janus/vim/langs/rdoc"]
+	path = janus/vim/langs/rdoc
+	url = https://github.com/depuracao/vim-rdoc.git
 
 # Tools
 [submodule "janus/vim/tools/unimpaired"]
@@ -230,3 +233,6 @@
 [submodule "janus/vim/tools/visualstar"]
 	path = janus/vim/tools/visualstar
 	url = https://github.com/thinca/vim-visualstar.git
+[submodule "janus/vim/tools/vim-trailing-whitespace"]
+	path = janus/vim/tools/vim-trailing-whitespace
+	url = https://github.com/bronson/vim-trailing-whitespace.git
