@@ -44,6 +44,7 @@ let g:fencview_checklines = 10 "检查前后10行来判断编码
 
 au FileType python setlocal et sw=4 ts=4
 au FileType html setlocal et sw=2 ts=2
+au FileType htmldjango setlocal et sw=2 ts=2
 au FileType javascript setlocal et sw=2 ts=2
 
 set diffexpr=MyDiff()
