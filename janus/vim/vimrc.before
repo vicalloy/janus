@@ -7,3 +7,4 @@ call janus#disable_plugin('pyflakes-vim')
 call janus#disable_plugin('delimitMate')
 let g:syntastic_python_flake8_args='--ignore=E501'
 au FileType python setlocal formatprg=autopep8\ -
+let g:jedi#show_call_signatures = 0
