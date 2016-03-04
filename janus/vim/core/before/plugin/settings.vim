@@ -2,11 +2,17 @@
 "" Basic Setup
 ""
 
-set nocompatible      " Use vim, no vi defaults
+if has('vim_starting') && !has('nvim') && &compatible
+  set nocompatible               " Be iMproved
+endif
 set number            " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
-set encoding=utf-8    " Set default encoding to UTF-8
+" Neovim disallow changing 'enconding' option after initialization
+" see https://github.com/neovim/neovim/pull/2929 for more details
+if !has('nvim')
+  set encoding=utf-8  " Set default encoding to UTF-8
+endif
 
 ""
 "" Whitespace
