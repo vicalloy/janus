@@ -5,5 +5,11 @@ language messages zh_CN.utf-8
 call janus#disable_plugin('supertab')
 call janus#disable_plugin('pyflakes-vim')
 call janus#disable_plugin('delimitMate')
+let g:syntastic_python_checkers = ['flake8', 'pyflakes', 'python']
 let g:syntastic_python_flake8_args='--ignore=E501'
+let g:syntastic_python_pyflakes_args='--ignore=E501'
 au FileType python setlocal formatprg=autopep8\ -
+set noimdisable
+autocmd! InsertLeave * set imdisable|set iminsert=0
+autocmd! InsertEnter * set noimdisable|set iminsert=0
+let g:jedi#show_call_signatures=0
