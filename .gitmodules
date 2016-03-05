@@ -242,3 +242,9 @@
 [submodule "janus/vim/tools/vim-gitgutter"]
 	path = janus/vim/tools/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "janus/vim/tools/fencview"]
+	path = janus/vim/tools/fencview
+	url = https://github.com/mbbill/fencview.git
+[submodule "janus/vim/tools/vim-swift"]
+	path = janus/vim/tools/vim-swift
+	url = https://github.com/toyamarinyon/vim-swift.git
